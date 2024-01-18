@@ -1,5 +1,5 @@
+import 'package:belajar_flutter/row_widget.dart';
 import 'package:flutter/material.dart';
-import 'container_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-           title: Text("sarahh"),
+           title: Text("HOME"),
            backgroundColor: Colors.green,
            centerTitle: true,
       ),
-      body: ContainerWidget(),  
+      body: RowColum(),
      ),
     );
   }
