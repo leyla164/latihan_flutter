@@ -1,3 +1,10 @@
+import 'package:belajar_flutter/column_widget.dart';
+import 'package:belajar_flutter/container_widget.dart';
+import 'package:belajar_flutter/contoh1_widget.dart';
+import 'package:belajar_flutter/contoh2_widget.dart';
+import 'package:belajar_flutter/contoh_widget.dart';
+import 'package:belajar_flutter/icon_widget.dart';
+import 'package:belajar_flutter/persib_widget.dart';
 import 'package:belajar_flutter/row_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +26,7 @@ class MyApp extends StatelessWidget {
            backgroundColor: Colors.green,
            centerTitle: true,
       ),
-      body: RowColum(),
+      body: LatihanPersib(),
      ),
     );
   }
