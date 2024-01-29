@@ -2,7 +2,11 @@ import 'package:belajar_flutter/column_widget.dart';
 import 'package:belajar_flutter/container_widget.dart';
 import 'package:belajar_flutter/contoh1_widget.dart';
 import 'package:belajar_flutter/contoh2_widget.dart';
+import 'package:belajar_flutter/contoh3_widget.dart';
 import 'package:belajar_flutter/contoh_widget.dart';
+import 'package:belajar_flutter/gridview/grid_basic.dart';
+import 'package:belajar_flutter/gridview/grid_builder.dart';
+import 'package:belajar_flutter/gridview/latihan_grid.dart';
 import 'package:belajar_flutter/icon_widget.dart';
 import 'package:belajar_flutter/persib_widget.dart';
 import 'package:belajar_flutter/row_widget.dart';
@@ -22,11 +26,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-           title: Text("HOME"),
+           title: Text("Chalkzone"),
            backgroundColor: Colors.green,
            centerTitle: true,
       ),
-      body: LatihanPersib(),
+      body: LatihanGrid(), 
      ),
     );
   }

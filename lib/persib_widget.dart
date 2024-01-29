@@ -1,27 +1,155 @@
 import 'package:flutter/material.dart';
 
-class LatihanPersib extends StatelessWidget {
+class   Persib extends StatelessWidget {
+  const   Persib({super.key});
 
-  final List<String> img = <String>['assets/img/pemain.jpeg', 'assets/img/123.jpg', 'assets/img/persib.png'];
-  
+  @override
   Widget build(BuildContext context) {
-  return Container(
-    color: Colors.blue,
-    padding: EdgeInsets.all(10),
-    margin: EdgeInsets.all(10),
-    height: 300,
-    width: double.infinity,
-    child: ListView.builder(
-      padding: const EdgeInsets.all(8),
-      itemCount: img.length,
-      itemBuilder: (BuildContext context, int index) {
-        return Container(
-          height: 100,
-          color: Colors.blue[200],
-          child: Center(child: Image.asset('${img[index]}', height: 200, width: 100,)),
-        );
-      }
-    ),
-  );
-}
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [Color.fromARGB(255, 223, 130, 130), Color.fromARGB(255, 196, 30, 5)]),
+      ),
+      child: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.all(16),
+            width: double.infinity,
+            height: 400,
+            decoration: BoxDecoration(
+              color: Colors.amberAccent,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: ListView(
+              children: [
+                Image.asset('assets/img/pemain.jpeg'),
+                Image.asset('assets/img/pemain.jpeg'),
+                Image.asset('assets/img/pemain.jpeg'),
+                Image.asset('assets/img/pemain.jpeg'),
+                Image.asset('assets/img/pemain.jpeg')
+
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(16),
+            width: double.infinity,
+            height: 120,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 8, 8, 8),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                   child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover,)
+                    ],
+                  ),
+                  color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover,)
+                    ],
+                  ),
+                  color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover,)
+                    ],
+                  ),
+                  color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover,)
+                    ],
+                  ),
+                  color: Colors.grey,
+                )
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(16),
+            width: double.infinity,
+            height: 120,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 5, 5, 5),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                   child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover)
+                    ],
+                  ),
+                  color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover)
+                    ],
+                  ),
+                  color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover)
+                    ],
+                  ),
+                  color: Colors.grey, 
+                ),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    children: [
+                      Image.asset('assets/img/persib.png', fit: BoxFit.cover)
+                    ],
+                  ),
+                  color: Colors.grey,
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
